@@ -8,7 +8,7 @@ bot = telebot.TeleBot('6757514713:AAFbwHmv4BZMHHtqkf9WBA2YsDNEUbsHHgc')
     'help'
 ])
 def main(message):
-    bot.send_message(message.chat.id, 'test!')
+    bot.send_message(message.chat.id, message)
 
 
 bot.polling(non_stop=True)
